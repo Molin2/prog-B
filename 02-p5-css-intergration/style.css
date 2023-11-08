@@ -1,0 +1,60 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: :border-box;
+}
+body{
+  display:grid;
+  grid-auto-flow: column;
+  height:100vh;
+  width:100vw;
+  overflow:hidden;
+}
+.page{
+  display: grid;
+  place-items: center;
+ width:100vw;
+ height:100vh;
+ position: fixed;
+
+ left: -100vw;
+ transition: all .5s ease-in-out;
+}
+
+.show{
+  left:0;
+}
+
+#page1{
+  background:orange 
+}
+#page2{
+  background:white 
+}
+#page3{
+  background:blue
+}
+#page4{
+  background:orange 
+}
+canvas {
+  display: block;
+}
+.menu{
+  position: fixed;
+  height: 12vh;
+  background: black;
+  width: 100vw;
+  bottom: 0;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.menuitem{
+  display: grid;
+  place-items: center;
+  border: 1px solid hotpink;
+  cursor: pointer;
+
+}
